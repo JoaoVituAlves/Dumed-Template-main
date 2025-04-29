@@ -22,7 +22,7 @@ export default class AutenticacaoController {
 
                         res.cookie("token", token, { httpOnly: true });
 
-                        return res.status(200).json({ /** */
+                        return res.status(200).json({ 
                             token, 
                             funcionario: {
                                 id: funcionario.id,
